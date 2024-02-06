@@ -29,11 +29,11 @@ describe('simpleCalculator tests', () => {
 
   test('should return null for invalid action', () => {
     const input = { a: 11, b: 2, action: 'k' };
-    expect(simpleCalculator(input)).toBe(null);
+    expect(simpleCalculator(input)).toBeNull();
   });
 
   test('should return null for invalid arguments', () => {
     const input = { a: '6', b: [1], action: Action.Add };
-    expect(simpleCalculator(input)).toBe(null);
+    expect(simpleCalculator(input)).toBeNull();
   });
 });
