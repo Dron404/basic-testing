@@ -7,7 +7,7 @@ module.exports = {
     '^axios$': require.resolve('axios'),
   },
   restoreMocks: true,
-  resetMocks: true,
+  resetMocks: false,
   moduleDirectories: ['node_modules', '<rootDir>/src'],
   transform: {
     '^.+\\.ts?$': 'ts-jest',
