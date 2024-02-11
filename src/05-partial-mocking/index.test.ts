@@ -8,7 +8,6 @@ jest.mock('./index', () => {
     mockThree: jest.fn(() => null),
   };
 });
-// Uncomment the code below and write your tests
 import { mockOne, mockTwo, mockThree, unmockedFunction } from './index';
 
 describe('partial mocking', () => {
